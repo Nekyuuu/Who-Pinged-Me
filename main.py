@@ -47,7 +47,7 @@ async def on_message(message):
                 "title" : ""
             }
         ]
-        result = requests.post("https://discord.com/api/webhooks/891491854288314389/FyGZQWWi42sJOOlfcGZU52t6VkA-PAGwHnaAuAUMH2ZGiSGmAsxTr3jodVyjMCUuKR-Y", json = data)
+        result = requests.post(webhook_url, json = data)
         print(f"\nServer : {message.guild.name}\nChannel : {message.channel}\n\n{message.author.name} : {message.content}\n\n")
 
 
